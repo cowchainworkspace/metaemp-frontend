@@ -39,7 +39,7 @@ function App() {
 
   return (
     <div className="App">
-      <Button onClick={test}>SUPER CONNECT</Button>
+      <Button onClick={test}>TEST</Button>
     </div>
   );
 }
