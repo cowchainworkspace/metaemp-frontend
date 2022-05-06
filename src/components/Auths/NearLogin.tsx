@@ -25,10 +25,12 @@ export const NearLogin: React.FC = () => {
   };
 
   const getBalance = async () => {
-    const balance = walletConnection
-      ? getDividedBalance((await walletConnection.account().state()).amount)
-      : 0;
-    setBalance(+balance.toFixed(4));
+    // const balance = walletConnection
+    //   ? getDividedBalance((await walletConnection.account().state()).amount)
+    //   : 0;
+    // setBalance(+balance.toFixed(4));
+    const account = walletConnection?.account();
+    console.log(await account?.getAccessKeys());
   };
 
   useEffect(() => {
