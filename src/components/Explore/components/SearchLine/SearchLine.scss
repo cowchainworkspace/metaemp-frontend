@@ -1,0 +1,33 @@
+.searchLine {
+  margin-bottom: 144px;
+  height: 63px;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &__body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__line {
+    outline: 0;
+    height: 63px;
+    width: 75%;
+    border: 0;
+    border-radius: 42px 0 0 42px;
+    font-size: 30px;
+    text-indent: 20px;
+  }
+  &__button {
+    height: 63px;
+    width: 15%;
+    font-size: 30px;
+    font-weight: 600;
+    border-radius: 0 42px 42px 0;
+  }
+}
+
+.button {
+  border: 0;
+}
